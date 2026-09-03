@@ -1,0 +1,2 @@
+import { ArrowUpRight } from 'lucide-react'
+export default function FoodCard({ food }) { return <article className="food-card"><img src={food.image} alt={food.name}/><div className="card-body"><span className="eyebrow">{food.category}</span><h3>{food.name}</h3><p>{food.description}</p><div className="nutrition-line"><span>{food.calories} kcal</span><span>{food.protein}g protein</span></div><button className="text-button">View details <ArrowUpRight size={16}/></button></div></article> }

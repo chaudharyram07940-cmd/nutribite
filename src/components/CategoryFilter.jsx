@@ -1,0 +1,1 @@
+export default function CategoryFilter({ categories, active, onChange }) { return <div className="filter-row">{categories.map((category) => <button key={category} className={`filter-pill ${active === category ? 'selected' : ''}`} onClick={() => onChange(category)}>{category}</button>)}</div> }
